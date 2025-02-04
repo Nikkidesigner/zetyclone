@@ -2,7 +2,7 @@ import React, { forwardRef, useState } from "react";
 import styles from "./Template18.module.css";
 import backgroundImage from "./background.png"; // Store background image in Template15 folder
 
-const Template16 = forwardRef(({ information, sections, activeColor }, ref) => {
+const Template18 = forwardRef(({ information, sections, activeColor }, ref) => {
   /*const info = {
     basicInfo: information[sections.basicInfo]?.detail || {},
     workExp: information[sections.workExp]?.details || [],
@@ -21,8 +21,8 @@ const Template16 = forwardRef(({ information, sections, activeColor }, ref) => {
            title: "Frontend Developer | React.js Specialist",
            phone: "+1234567890",
            email: "john.doe@example.com",
-           github: "https://github.com/johndoe",
-           linkedin: "https://linkedin.com/in/johndoe",
+           github: "https://github.com/Nikkidesigner/",
+           linkedin: "https://linkedin.com/in/johndoe-765466-77h/doe",
          },
          workExp: [
            {
@@ -92,49 +92,6 @@ const Template16 = forwardRef(({ information, sections, activeColor }, ref) => {
       ref={ref}
       style={{ "--theme-color": activeColor, backgroundImage: `url(${backgroundImage})` }}
     >
-      {/* Left Panel */}
-      <div className={styles.leftPanel}>
-        <h1 className={styles.name}><strong>{info.basicInfo.name || "Your Name"}</strong></h1>
-        <h2 className={styles.title}>{info.basicInfo.title || "Your Title"}</h2>
-
-        <div className={styles.section}>
-          <h3>Contact</h3>
-          {info.basicInfo.email && <p>Email: {info.basicInfo.email}</p>}
-          {info.basicInfo.phone && <p>Phone: {info.basicInfo.phone}</p>}
-          {info.basicInfo.linkedin && (
-            <p>
-              LinkedIn: <a href={info.basicInfo.linkedin}>{info.basicInfo.linkedin}</a>
-            </p>
-          )}
-          {info.basicInfo.github && (
-            <p>
-              GitHub: <a href={info.basicInfo.github}>{info.basicInfo.github}</a>
-            </p>
-          )}
-        </div>
-        <div className={styles.section}>
-          <h3>Skills</h3>
-          <div className={styles.skillContainer}>
-            {info.skills.map((skill, index) => (
-              <span key={index} className={styles.skillBubble}>
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
-
-        <div className={styles.section}>
-          <h3>Languages</h3>
-          <div className={styles.languageContainer}>
-            {info.languages.map((language, index) => (
-              <span key={index} className={styles.languageBubble}>
-                {language}
-              </span>
-            ))}
-          </div>
-        </div>
-      </div>
-
       {/* Right Panel */}
       <div className={styles.rightPanel}>
         <div className={styles.section}>
@@ -201,6 +158,52 @@ const Template16 = forwardRef(({ information, sections, activeColor }, ref) => {
   </ul>
         </div>
       </div>
+
+
+
+       {/* Left Panel */}
+       <div className={styles.leftPanel}>
+        <h1 className={styles.name}><strong>{info.basicInfo.name || "Your Name"}</strong></h1>
+        <h2 className={styles.title}>{info.basicInfo.title || "Your Title"}</h2>
+
+        <div className={styles.section}>
+          <h3>Contact</h3>
+          {info.basicInfo.email && <p>Email: {info.basicInfo.email}</p>}
+          {info.basicInfo.phone && <p>Phone: {info.basicInfo.phone}</p>}
+          {info.basicInfo.linkedin && (
+            <p>
+              LinkedIn: <a href={info.basicInfo.linkedin}>{info.basicInfo.linkedin}</a>
+            </p>
+          )}
+          {info.basicInfo.github && (
+            <p>
+              GitHub: <a href={info.basicInfo.github}>{info.basicInfo.github}</a>
+            </p>
+          )}
+        </div>
+        <div className={styles.section}>
+          <h3>Skills</h3>
+          <div className={styles.skillContainer}>
+            {info.skills.map((skill, index) => (
+              <span key={index} className={styles.skillBubble}>
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        <div className={styles.section}>
+          <h3>Languages</h3>
+          <div className={styles.languageContainer}>
+            {info.languages.map((language, index) => (
+              <span key={index} className={styles.languageBubble}>
+                {language}
+              </span>
+            ))}
+          </div>
+        </div>
+      </div>
+
     </div>
     </div>
   );

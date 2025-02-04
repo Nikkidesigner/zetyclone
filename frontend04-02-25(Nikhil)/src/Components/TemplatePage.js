@@ -19,7 +19,9 @@ const templates = [
   { id: 15, title: 'Template 15', image: 'https://res.cloudinary.com/dajopw7zz/image/upload/v1738579536/NextStepCv/template15.jpg', withPhoto: false, columns: 2 },
   { id: 16, title: 'Template 16', image: 'https://res.cloudinary.com/dajopw7zz/image/upload/v1738579536/NextStepCv/template16.jpg', withPhoto: false, columns: 2 },
   { id: 17, title: 'Template 17', image: 'https://res.cloudinary.com/dajopw7zz/image/upload/v1738650434/NextStepCv/template17.jpg', withPhoto: false, columns: 2 },
-  { id: 18, title: 'Template 18', image: 'https://res.cloudinary.com/dajopw7zz/image/upload/v1738579536/NextStepCv/template16.jpg', withPhoto: false, columns: 2 },
+  { id: 18, title: 'Template 18', image: 'https://res.cloudinary.com/dajopw7zz/image/upload/v1738579536/NextStepCv/template18.jpg', withPhoto: false, columns: 2 },
+  { id: 19, title: 'Template 19', image: 'https://res.cloudinary.com/dajopw7zz/image/upload/v1738579536/NextStepCv/template18.jpg', withPhoto: false, columns: 1 },
+  { id: 20, title: 'Template 20', image: 'https://res.cloudinary.com/dajopw7zz/image/upload/v1738579536/NextStepCv/template18.jpg', withPhoto: false, columns: 1 },
   
 ];
 

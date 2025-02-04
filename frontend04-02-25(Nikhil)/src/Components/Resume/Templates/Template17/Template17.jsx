@@ -99,8 +99,16 @@ const Template17 = forwardRef(({ information, sections, activeColor }, ref) => {
 <br></br>
         <div className={styles.section}>
           <h3>Contact</h3>
-          {info.basicInfo.email && <p>Email: {info.basicInfo.email}</p>}
-          {info.basicInfo.phone && <p>Phone: {info.basicInfo.phone}</p>}
+          {info.basicInfo.email &&
+             <p>
+                Email: <a href={info.basicInfo.email}>{info.basicInfo.email}</a>
+              </p>
+          }
+          {info.basicInfo.phone && 
+            <p>
+                Phone: <a href={info.basicInfo.phone}>{info.basicInfo.phone}</a>
+            </p>
+          }
           {info.basicInfo.linkedin && (
             <p>
               LinkedIn: <a href={info.basicInfo.linkedin}>{info.basicInfo.linkedin}</a>
