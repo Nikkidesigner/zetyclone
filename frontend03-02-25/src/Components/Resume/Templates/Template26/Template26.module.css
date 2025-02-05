@@ -1,0 +1,127 @@
+.resume {
+  display: flex;
+  flex-direction: column; /* Changed back to column for the resume layout */
+  width: 250mm;
+  /* height: 300mm; */
+  /* background-size: cover; */
+  background-size: 100vh;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2);
+  font-size: 15px;
+  --theme-color: #1976d2;
+}
+
+.resumeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Header */
+.header {
+  text-align: center; /* Changed to center alignment */
+  margin-bottom: 30px;
+  background-color: #fbdc6a; /* Added background color */
+  padding: 10px; /* Optional: Add padding for better spacing */
+}
+
+.name {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--theme-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.title {
+  font-size: 18px;
+  color: white;
+  background: black;
+  padding: 0px;
+  display: inline-block;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  align-items: center;
+  background-color: #fbdc6a; /* Added background color */
+  padding: 0px; /* Optional: Add padding for better spacing */
+}
+
+.socials p {
+  display: flex;
+  align-items: center;
+  gap: 2px; /* Minimized gap between social links */
+}
+
+.socials a {
+  color: var(--theme-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.socials a:hover {
+  color: #ff4081;
+  transform: scale(1.1);
+}
+
+/* Section Styling */
+.section {
+  margin-top: 25px;
+  text-align: left;
+}
+
+.section h3 {
+  font-size: 18px;
+  color: white;
+  background: black;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Skills & Languages Elliptical Styling */
+.skills,
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skillContainer,
+.languageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skillBubble,
+.languageBubble {
+  /* background: var(--theme-color); */
+  background: #666666;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.skillBubble:hover,
+.languageBubble:hover {
+  background: #000000;
+  transform: scale(1.05);
+}
+
+/* Numbered Lists */
+.section ol {
+  list-style-type: decimal;
+  padding-left: 25px;
+  font-size: 14px;
+}
