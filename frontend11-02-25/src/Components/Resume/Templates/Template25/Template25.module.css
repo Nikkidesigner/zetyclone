@@ -1,0 +1,79 @@
+.resume {
+  display: flex;
+  width: 210mm;
+  height: 297mm;
+  background: white;
+  font-size: 12px;
+  position: relative;
+}
+
+/* Left Sidebar */
+.leftPanel {
+
+  width: 30%;
+  left: 20px;
+  top: 20px; /* Slightly lowered for overlay effect */
+  background-color: var(--theme-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Hexagon Shape */
+.hexagon {
+  width: 100px;
+  height: 110px;
+  background-color: #ffffff;
+  color: var(--theme-color);
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: auto;
+}
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon::before {
+  bottom: 100%;
+  border-bottom: 30px solid white;
+}
+
+.hexagon::after {
+  top: 100%;
+  border-top: 30px solid white;
+}
+
+/* Right Panel */
+.rightPanel {
+  width: 70%;
+  padding: 20px;
+}
+
+/* Name Strip */
+.nameStrip {
+  background-color: #d3d3d3;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Cursive Section Titles */
+.sectionTitle {
+  font-family: cursive;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+  margin-bottom: 8px;
+}
+
+.justified {
+  text-align: justify;
+}
