@@ -203,6 +203,94 @@ const templates = [
     columns: 2,
   },
   {
+    id: 26,
+    title: "Template 26",
+    image:
+      "https://res.cloudinary.com/dcbtvmkmb/image/upload/v1739625687/Resume-template/hpn2l7vbpahd8xwyllku.png",
+    withPhoto: false,
+    columns: 2,
+  },
+  {
+    id: 27,
+    title: "Template 27",
+    image:
+      "https://res.cloudinary.com/dcbtvmkmb/image/upload/v1739627838/Resume-template/tmnwmvotsslipt4aui2a.png",
+    withPhoto: false,
+    columns: 2,
+  },
+  {
+    id: 28,
+    title: "Template 28",
+    image:
+      "https://res.cloudinary.com/dcbtvmkmb/image/upload/v1739541845/Resume-template/dsestdnlmr0c3hdswc61.png",
+    withPhoto: false,
+    columns: 2,
+  },
+  {
+    id: 29,
+    title: "Template 29",
+    image:
+      "https://res.cloudinary.com/dcbtvmkmb/image/upload/v1739610499/Resume-template/iarwnjnzoyeyjjzqptet.png",
+    withPhoto: false,
+    columns: 2,
+  },
+  {
+    id: 30,
+    title: "Template 30",
+    image:
+      "https://res.cloudinary.com/dcbtvmkmb/image/upload/v1739612041/Resume-template/ilzgddc6jdbyjdbyxygr.png",
+    withPhoto: false,
+    columns: 2,
+  },
+  {
+    id: 31,
+    title: "Template 31",
+    image:
+      "https://res.cloudinary.com/dcbtvmkmb/image/upload/v1739544990/Resume-template/iwncf990fjmiw5tcux28.png",
+    withPhoto: false,
+    columns: 2,
+  },
+  {
+    id: 32,
+    title: "Template 32",
+    image:
+      "https://res.cloudinary.com/dcbtvmkmb/image/upload/v1739545726/Resume-template/cxjjgbn7bbjc63adwxae.png",
+    withPhoto: false,
+    columns: 2,
+  },
+  {
+    id: 33,
+    title: "Template 33",
+    image:
+      "https://res.cloudinary.com/dcbtvmkmb/image/upload/v1739547155/Resume-template/ru65ujdjwnj8watd2de9.png",
+    withPhoto: false,
+    columns: 2,
+  },
+  {
+    id: 34,
+    title: "Template 34",
+    image:
+      "https://res.cloudinary.com/dcbtvmkmb/image/upload/v1739554459/Resume-template/rnadkppslplvy3bpbgyq.png",
+    withPhoto: false,
+    columns: 2,
+  },
+  {
+    id: 35,
+    title: "Template 35",
+    image:
+      "https://res.cloudinary.com/dcbtvmkmb/image/upload/v1739613111/Resume-template/ltxffdzcxjb5pwqlnaxm.png",
+    withPhoto: false,
+    columns: 2,
+  },
+  {
+    id: 36,
+    title: "Template 36",
+    image:
+      "https://res.cloudinary.com/dcbtvmkmb/image/upload/v1739636794/Resume-template/uvvb1sweto2cgklk0rkn.png",
+    withPhoto: false,
+    columns: 2,
+  },
+  {
     id: 37,
     title: "Template 37",
     image:
