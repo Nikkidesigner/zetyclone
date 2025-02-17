@@ -616,6 +616,105 @@ const Resume = forwardRef((props, ref) => {
             activeColor={activeColor}
           />
         );
+      case 26:
+        return (
+          <Template26
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 27:
+        return (
+          <Template27
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 28:
+        return (
+          <Template28
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 29:
+        return (
+          <Template29
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 30:
+        return (
+          <Template30
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 31:
+        return (
+          <Template31
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 32:
+        return (
+          <Template32
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 33:
+        return (
+          <Template33
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 34:
+        return (
+          <Template34
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 35:
+        return (
+          <Template35
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 36:
+        return (
+          <Template36
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
       case 37:
         return (
           <Template37
