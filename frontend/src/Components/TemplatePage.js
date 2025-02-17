@@ -195,6 +195,14 @@ const templates = [
     columns: 2,
   },
   {
+    id: 25,
+    title: "Template 25",
+    image:
+      "https://res.cloudinary.com/dcbtvmkmb/image/upload/v1739630477/Resume-template/mu1av8fnrfoqndx1yhoy.png",
+    withPhoto: false,
+    columns: 2,
+  },
+  {
     id: 37,
     title: "Template 37",
     image:
