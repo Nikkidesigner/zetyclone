@@ -1,7 +1,8 @@
 import React, { forwardRef } from "react";
-import styles from "./Template3.module.css";
+import styles from "./Template4.module.css";
+import backgroundImage from "./background.jpg";
 
-const Template3 = forwardRef(({ information, sections }, ref) => {
+const Template4 = forwardRef(({ information, sections }, ref) => {
   const info = {
     basicInfo: information[sections.basicInfo]?.detail || {},
     workExperience: information[sections.workExp]?.details || [],
@@ -13,8 +14,8 @@ const Template3 = forwardRef(({ information, sections }, ref) => {
   };
 
   return (
-    <div className={styles.resumeContainer} ref={ref}>
-      <div className={styles.resume}>
+    <div className={styles.resumeContainer} ref={ref} >
+      <div className={styles.resume} style={{ backgroundImage: `url(${backgroundImage})` }}>
         {/* Header Section */}
         <header className={styles.header}>
           <h1>{info.basicInfo.name || "Your Name"}</h1>
@@ -122,4 +123,4 @@ const Template3 = forwardRef(({ information, sections }, ref) => {
   );
 });
 
-export default Template3;
+export default Template4;

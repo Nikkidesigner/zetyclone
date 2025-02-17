@@ -69,7 +69,7 @@ const Navbar = () => {
           </span>
           {isDropdownOpen('resume-cv') && (
             <div className="dropdown-menu">
-              <a href="#resume-template">Resume Templates</a>
+              <Link to="/template">Resume Templates</Link>
               <a href="#cv-templates">CV Templates</a>
             </div>
           )}

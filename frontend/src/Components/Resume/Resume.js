@@ -1,11 +1,41 @@
 import React, { forwardRef, useEffect, useRef, useState } from "react";
 import Template1 from "./Templates/Template1/Template1";
 import Template2 from "./Templates/Template2/Template2";
+import Template3 from "./Templates/Template3/Template3";
+import Template4 from "./Templates/Template4/Template4";
+import Template5 from "./Templates/Template5/Template5";
+import Template6 from "./Templates/Template6/Template6";
+
 import Template7 from "./Templates/Template7/Template7";
 import DefaultTemplate from "./Templates/DefaultTemplate/DefaultTemplate";
 import styles from "./Resume.module.css";
-import { AtSign, Calendar, GitHub, Linkedin, MapPin, Paperclip, Phone } from "react-feather";
-
+import {
+  AtSign,
+  Calendar,
+  GitHub,
+  Linkedin,
+  MapPin,
+  Paperclip,
+  Phone,
+} from "react-feather";
+import Template8 from "./Templates/Template8/Template8";
+import Template9 from "./Templates/Template9/Template9";
+import Template10 from "./Templates/Template10/Template10";
+import Template11 from "./Templates/Template11/Template11";
+import Template12 from "./Templates/Template12/Template12";
+import Template13 from "./Templates/Template13/Template13";
+import Template14 from "./Templates/Template14/Template14";
+import Template15 from "./Templates/Template15/Template15";
+import Template16 from "./Templates/Template16/Template16";
+import Template17 from "./Templates/Template17/Template17";
+import Template18 from "./Templates/Template18/Template18";
+import Template19 from "./Templates/Template19/Template19";
+import Template20 from "./Templates/Template20/Template20";
+import Template21 from "./Templates/Template21/Template21";
+import Template22 from "./Templates/Template22/Template22";
+import Template23 from "./Templates/Template23/Template23";
+import Template24 from "./Templates/Template24/Template24";
+import Template37 from "./Templates/Template37/Template37";
 
 const Resume = forwardRef((props, ref) => {
   const { information, sections, activeColor, templateId } = props;
@@ -22,6 +52,8 @@ const Resume = forwardRef((props, ref) => {
     education: information[sections.education],
     basicInfo: information[sections.basicInfo],
     summary: information[sections.summary],
+    skills: information[sections.skills],
+    languages: information[sections.languages],
     other: information[sections.other],
   };
 
@@ -235,6 +267,40 @@ const Resume = forwardRef((props, ref) => {
         </div>
       </div>
     ),
+    [sections.skills]: (
+      <div
+        className={`${styles.section} ${
+          info.skills?.sectionTitle ? "" : styles.hidden
+        }`}
+      >
+        <div className={styles.sectionTitle}>{info.skills?.sectionTitle}</div>
+        <div className={styles.content}>
+          {info.skills?.points?.map((skill, index) => (
+            <li key={index} className={styles.point}>
+              {skill}
+            </li>
+          ))}
+        </div>
+      </div>
+    ),
+    [sections.languages]: (
+      <div
+        className={`${styles.section} ${
+          info.languages?.sectionTitle ? "" : styles.hidden
+        }`}
+      >
+        <div className={styles.sectionTitle}>
+          {info.languages?.sectionTitle}
+        </div>
+        <div className={styles.content}>
+          {info.languages?.points?.map((language, index) => (
+            <li key={index} className={styles.point}>
+              {language}
+            </li>
+          ))}
+        </div>
+      </div>
+    ),
     [sections.other]: (
       <div
         key={"other"}
@@ -282,7 +348,13 @@ const Resume = forwardRef((props, ref) => {
 
   useEffect(() => {
     setColumns([
-      [sections.project, sections.education, sections.summary],
+      [
+        sections.project,
+        sections.education,
+        sections.summary,
+        sections.skills,
+        sections.languages,
+      ],
       [sections.workExp, sections.achievement, sections.other],
     ]);
   }, []);
@@ -317,18 +389,51 @@ const Resume = forwardRef((props, ref) => {
             activeColor={activeColor}
           />
         );
-        case 3:
+      case 3:
         return (
-            <DefaultTemplate
-              ref={ref}
-              information={information}
-              sections={sections}
-              activeColor={activeColor}
-              columns={columns}
-              sectionDiv={sectionDiv}
-            />
+          <Template3
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+            columns={columns}
+            sectionDiv={sectionDiv}
+          />
         );
-        case 7:
+      case 4:
+        return (
+          <Template4
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+            columns={columns}
+            sectionDiv={sectionDiv}
+          />
+        );
+      case 5:
+        return (
+          <Template5
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+            columns={columns}
+            sectionDiv={sectionDiv}
+          />
+        );
+      case 6:
+        return (
+          <Template6
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+            columns={columns}
+            sectionDiv={sectionDiv}
+          />
+        );
+      case 7:
         return (
           <Template7
             ref={ref}
@@ -337,6 +442,169 @@ const Resume = forwardRef((props, ref) => {
             activeColor={activeColor}
           />
         );
+      case 8:
+        return (
+          <Template8
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 9:
+        return (
+          <Template9
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 10:
+        return (
+          <Template10
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 11:
+        return (
+          <Template11
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 12:
+        return (
+          <Template12
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 13:
+        return (
+          <Template13
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 14:
+        return (
+          <Template14
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 15:
+        return (
+          <Template15
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 16:
+        return (
+          <Template16
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 17:
+        return (
+          <Template17
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 18:
+        return (
+          <Template18
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 19:
+        return (
+          <Template19
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 20:
+        return (
+          <Template20
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 21:
+        return (
+          <Template21
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 22:
+        return (
+          <Template22
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 23:
+        return (
+          <Template23
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 24:
+        return (
+          <Template24
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+      case 37:
+        return (
+          <Template37
+            ref={ref}
+            information={information}
+            sections={sections}
+            activeColor={activeColor}
+          />
+        );
+
       default:
         return (
           <DefaultTemplate

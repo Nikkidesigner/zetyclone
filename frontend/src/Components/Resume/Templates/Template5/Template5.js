@@ -1,7 +1,8 @@
 import React, { forwardRef } from "react";
-import styles from "./Template1.module.css";
+import styles from "./Template5.module.css";
+import backgroundImage from "./background.jpg";
 
-const Template1 = forwardRef(({ information, sections }, ref) => {
+const Template5 = forwardRef(({ information, sections }, ref) => {
   const info = {
     basicInfo: information[sections.basicInfo]?.detail || {},
     workExperience: information[sections.workExp]?.details || [],
@@ -14,26 +15,29 @@ const Template1 = forwardRef(({ information, sections }, ref) => {
 
   return (
     <div className={styles.resumeContainer} ref={ref}>
-      <div className={styles.resume}>
+      <div className={styles.resume} style={{ backgroundImage: `url(${backgroundImage})` }}>
         {/* Header Section */}
         <header className={styles.header}>
-          <h1>{info.basicInfo.name || "Your Name"}</h1>
-          <p className={styles.title}>{info.basicInfo.title || "Your Position"}</p>
+  <div className={styles.headerLeft}>
+    <h1 className={styles.name}>{info.basicInfo.name || "Your Name"}</h1>
+    <p className={styles.title}>{info.basicInfo.title || "Your Position"}</p>
+  </div>
 
-          {/* Contact Info in One Line */}
-          <div className={styles.contactInfo}>
-            {info.basicInfo.email && <span>✉️ {info.basicInfo.email} | </span>}
-            {info.basicInfo.phone && <span>📞 {info.basicInfo.phone} | </span>}
-            {info.basicInfo.linkedin && (
-              <span>🔗 <a href={info.basicInfo.linkedin} target="_blank" rel="noreferrer">LinkedIn</a> | </span>
-            )}
-            {info.basicInfo.github && (
-              <span>🐙 <a href={info.basicInfo.github} target="_blank" rel="noreferrer">GitHub</a></span>
-            )}
-          </div>
+  {/* Contact Info - Now on the Top Right Side */}
+  <div className={styles.contactInfo}>
+    {info.basicInfo.email && <span>✉️ {info.basicInfo.email}</span>}
+    {info.basicInfo.phone && <span>📞 {info.basicInfo.phone}</span>}
+    {info.basicInfo.linkedin && (
+      <span>🔗 <a href={info.basicInfo.linkedin} target="_blank" rel="noreferrer">LinkedIn</a></span>
+    )}
+    {info.basicInfo.github && (
+      <span>🐙 <a href={info.basicInfo.github} target="_blank" rel="noreferrer">GitHub</a></span>
+    )}
+  </div>
+</header>
 
-          <hr className={styles.line} />
-        </header>
+
+        <hr className={styles.line} />
 
         {/* Main Content */}
         <div className={styles.mainContent}>
@@ -122,7 +126,6 @@ const Template1 = forwardRef(({ information, sections }, ref) => {
                 </div>
               ))}
             </section>
-
           </div>
         </div>
 
@@ -133,4 +136,4 @@ const Template1 = forwardRef(({ information, sections }, ref) => {
   );
 });
 
-export default Template1;
+export default Template5;

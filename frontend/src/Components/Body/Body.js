@@ -10,7 +10,7 @@ import styles from "./Body.module.css";
 import {url} from "../../api/apiendpoint";
 
 function Body() {
-  const colors = ["#239ce2", "#48bb78", "#0bc5ea", "#a0aec0", "#ed8936"];
+  const colors = ["#239ce2", "#48bb78", "#082a4d", "#a0aec0", "#ed8936"];
   const sections = {
     basicInfo: "Basic Info",
     workExp: "Work Experience",
@@ -18,7 +18,10 @@ function Body() {
     education: "Education",
     achievement: "Achievements",
     summary: "Summary",
+    skills: "Skills", // Add this line
+  languages: "Languages", // Add this line
     other: "Other",
+    
   };
   const resumeRef = useRef();
   const location = useLocation();
@@ -55,6 +58,16 @@ function Body() {
       id: sections.summary,
       sectionTitle: sections.summary,
       summary: "",
+    },
+    [sections.skills]: {
+      id: sections.skills,
+      sectionTitle: sections.skills,
+      points: [], // Holds the list of skills
+    },
+    [sections.languages]: {
+      id: sections.languages,
+      sectionTitle: sections.languages,
+      points: [], // Holds the list of languages
     },
     [sections.other]: {
       id: sections.other,
