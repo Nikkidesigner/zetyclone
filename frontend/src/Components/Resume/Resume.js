@@ -36,6 +36,17 @@ import Template22 from "./Templates/Template22/Template22";
 import Template23 from "./Templates/Template23/Template23";
 import Template24 from "./Templates/Template24/Template24";
 import Template25 from "./Templates/Template25/Template25";
+import Template26 from "./Templates/Template26/Template26";
+import Template27 from "./Templates/Template27/Template27";
+import Template28 from "./Templates/Template28/Template28";
+import Template29 from "./Templates/Template29/Template29";
+import Template30 from "./Templates/Template30/Template30";
+import Template31 from "./Templates/Template31/Template31";
+import Template32 from "./Templates/Template32/Template32";
+import Template33 from "./Templates/Template33/Template33";
+import Template34 from "./Templates/Template34/Template34";
+import Template35 from "./Templates/Template35/Template35";
+import Template36 from "./Templates/Template36/Template36";
 import Template37 from "./Templates/Template37/Template37";
 
 const Resume = forwardRef((props, ref) => {
@@ -596,7 +607,7 @@ const Resume = forwardRef((props, ref) => {
             activeColor={activeColor}
           />
         );
-        case 25:
+      case 25:
         return (
           <Template25
             ref={ref}
